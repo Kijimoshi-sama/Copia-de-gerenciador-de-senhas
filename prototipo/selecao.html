@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<title>Atendimento</title>
+	<script src="script.js"></script>
+</head>
+<body>
+
+	<header>
+		<img   src="img/logobsb.jpg">
+	</header>
+		<div id="container-atendimento">
+
+				<img src="img/cadastro.png">
+
+			<form action="" onsubmit="validardados()">
+					 <label for="nome">NOME:</label>
+		       		 		<input type="text" name="nome" id="nome" size="30" maxlength="100"/>
+					<label for="atendimento">ATENDIMENTO:</label>
+					 			<select id="atendimento" name="atendimento">
+					 				<option value=""></option>
+						 			<option value="Trancamento-Matricula">Trancamento de Matrícula</option>
+						 			<option value="Trancamento-materia">Trancamento de Matéria</option>
+									<option value="Emissao-declaracao">Emitir Declaração</option>
+									<option value="Emissao-carteirinha">Emitir Carteirinha</option>
+									<option value="Emissao-historico">Emitir Histórico</option>
+									<option value="Registro-academico">Registro Acadêmico</option>
+									<option value="Mudanca-matrícula">Matrícula</option>
+									<option value="Processo-seletivo">Processo Seletivo</option>
+									<option value="Emissao-diploma">Emitir Diploma</option>
+									<option value="Elaboracao-relatorio">Elaborar Relatório</option>
+								</select> 
+					<label for="prioridade">PRIORIDADE:</label>
+						<select id="prioridade" name="prioridade">
+							<option value=""></option>
+							<option value="Pessoa-com-Deficiência">Pessoa com Deficiência</option>
+							<option value="Idoso"> Idoso</option>
+							<option value="Gestante">Gestante</option>
+							<option value="Crianca-colo">Criança de Colo</option>
+							<option value="Obeso">Obeso</option>
+							<option value="Outro">Outro</option>
+						</select>
+							<button type="submit"onclick="gerarsenha()">GERAR SENHA</button>
+					
+			</form>
+		</div>
+</body>
+</html>
